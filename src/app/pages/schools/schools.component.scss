@@ -218,7 +218,7 @@ body {
         line-height: 1rem;
         @include mq-sm {
           font-size: 165%;
-          line-height: 1.2rem;
+          line-height: 1.5rem;
         }
         span {
           display: block;
@@ -284,4 +284,7 @@ body {
 ::ng-deep school-dialog .mat-dialog-title{
   margin: -24px -24px 24px -24px;
   padding: 24px;
+}
+::ng-deep .mat-dialog-content div ul a {
+  overflow-wrap: break-word;
 }

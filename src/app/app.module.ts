@@ -6,11 +6,11 @@ import {AppComponent, NewsletterDialog} from './components/app-root/app.componen
 import {AboutComponent} from './pages/about/about.component';
 import {HomeComponent, TestimonialDialog} from './pages/home/home.component';
 import {ContactComponent} from './pages/contact/contact.component';
-import {GalleryComponent} from './pages/gallery/gallery.component';
+// import {GalleryComponent} from './pages/gallery/gallery.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {BannerComponent} from './components/banner/banner.component';
 import {CountoModule} from "angular2-counto/index";
-import {ProjectsComponent} from './pages/projects/projects.component';
+// import {ProjectsComponent} from './pages/projects/projects.component';
 import {SchoolDialog, SchoolsComponent} from './pages/schools/schools.component';
 import {SWIPER_CONFIG, SwiperConfigInterface, SwiperModule} from 'ngx-swiper-wrapper';
 import {MatCardModule} from '@angular/material/card';
@@ -40,9 +40,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     TestimonialDialog,
     HomeComponent,
     ContactComponent,
-    GalleryComponent,
     BannerComponent,
-    ProjectsComponent,
     SchoolsComponent,
     SchoolDialog,
     DonateComponent,
