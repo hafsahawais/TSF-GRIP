@@ -1,0 +1,29 @@
+<div class="popup">
+  <div class="content">
+    <div class="container">
+      <div class="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+      </div>
+
+      <span (click)="onNoClick()" class="closebtn icon icon-close"></span>
+
+      <div class="title">
+        <h1>Become A Subscriber</h1>
+      </div>
+
+      <img src="../../../assets/images/alkhairlogo.png" alt="Car">
+
+      <div class="subscribe">
+        <h1>Subscribe To Get The Notification Of Latest <span>POSTS</span></h1>
+
+        <form [formGroup]="newsletterForm">
+          <input formControlName="email" type="email" placeholder="Put Your Email Address">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

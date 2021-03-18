@@ -1,0 +1,16 @@
+<app-banner [text]="'Donate'" [image]="'./../../assets/images/about_banner.jpg'" class="text-underline"></app-banner>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-6 col-xs-4 d-flex" data-aos="fade-up">
+        <div class="img img-about align-self-stretch" style="background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'); width: 100%; background-size: auto;
+        background-repeat: no-repeat; object-fit: cover"></div>
+      </div>
+      <div class="col-md-6 pl-md-5" data-aos="fade-up">
+        <h2 class="mb-4">{{heading}}</h2>
+        <div [innerHTML]="text"></div>
+      </div>
+    </div>
+  </div>
+</section>

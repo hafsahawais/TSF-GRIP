@@ -1,0 +1,41 @@
+<app-banner [text]="'Gallery'" [image]="'./../../assets/images/about_banner.jpg'" class="text-underline"></app-banner>
+<section>
+
+  <div class="gallerize-example">
+
+    <div class="layout">
+      <div class="card text-center border-0 shadow-lg h-100 img-box" *ngFor="let item of items; index as i">
+        <img
+          [lightbox]="i"
+          [gallery]="'anotherLightbox'"
+          [src]="item.data.thumb" width="300" height="300" alt="">
+        <h4 class=" pb-4">"{{imageCaptions[i]}}"</h4>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+  <div class="col-md-12 heading-section heading text-center" data-aos="fade-up">
+    <h1 class="mb-4 mt-5">Latest Youtube Videos</h1>
+  </div>
+  </div>
+  <div class="video">
+  <div *ngFor="let video of videos" class="col-xl-3 col-md-6 mb-4 ">
+    <div class="card border-0 shadow h-100">
+<!--      <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">-->
+<!--        <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>-->
+      <iframe height="315" [src]="'https:///www.youtube.com/embed/' + video.id.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title mb-0">
+          <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank" [innerHTML]="video.snippet.title">
+          </a></h5>
+<!--        <div class="card-text text-black-50">{{video.snippet.description.slice(0, 100)}}</div>-->
+        <p class="card-text">{{video.snippet.description}}</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

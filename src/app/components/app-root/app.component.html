@@ -1,0 +1,136 @@
+<!--navbar starts here-->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container">
+    <img style="width: 100px" src="assets/images/idara-alkair-logo-white.png" class="navbar-brand" routerLink="/"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a routerLink="/" class="nav-link">Home</a></li>
+        <li data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item" routerLinkActive="active"><a routerLink="/about" class="nav-link">About</a></li>
+        <li data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item" routerLinkActive="active"><a routerLink="/schools" class="nav-link">Schools</a></li>
+        <li data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item dropdown" routerLinkActive="active">
+          <a style="cursor: pointer" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" [routerLink]="['/projects', 'MedicalFacilities']">Medical Facilities</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'OrphanCareProgram']">Orphan Care Program</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'CleanWaterForAll']">Clean Water for All</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'TechnicalEducation']">Technical Education</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'ScholarshipsForHigherEducation']">Scholarships for Higher Education</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'EnvironmentalSustainability']">Environmental Sustainability</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'FoodSupportProgram']">Food Support Program</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'EducationThroughGarbage']">Education Through Garbage</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'Qurbani']">Qurbani</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/projects', 'HelpADream']">Help a Dream</a>
+          </div>
+        </li>
+        <li data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item" routerLinkActive="active"><a routerLink="/gallery" class="nav-link">Gallery</a></li>
+        <li data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item" routerLinkActive="active"><a routerLink="/contact" class="nav-link">Contact</a></li>
+        <li data-toggle="collapse" data-target=".navbar-collapse.show" class="ml-4" routerLinkActive="active"><p><a routerLink="/donate" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!--navbar ends here-->
+
+
+<router-outlet></router-outlet>
+
+<footer class="ftco-footer ftco-section img">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ftco-footer-widget mb-4">
+          <img src="assets/images/idara-alkair-logo-white.png" class="navbar-brand mb-3" routerLink="/"/>
+          <p class="text-justify">Idara Alkhair is a non profitable private organization which has been working for the cause of education for last 30 years. Our mission is to spread the light of education in underprivileged areas of Pakistan. Idara Al-Khair welfare society was established in the year 1987 and registered with the Government of Sindh, Pakistan.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Subscribe to our newsletter</h2>
+          <p class="text-justify">Always stay informed of our latest news and events!</p>
+          <p><a (click)="openNewsletterPopup()" class="btn btn-white px-3 py-2 mt-2">Sign Up</a></p>
+<!--          <div class="block-21 mb-4 d-flex">-->
+<!--            <a class="blog-img mr-4"></a>-->
+<!--            <div class="text">-->
+<!--              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>-->
+<!--              <div class="meta">-->
+<!--                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>-->
+<!--                <div><a href="#"><span class="icon-person"></span> Admin</a></div>-->
+<!--                <div><a href="#"><span class="icon-chat"></span> 19</a></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="block-21 mb-4 d-flex">-->
+<!--            <a class="blog-img mr-4"></a>-->
+<!--            <div class="text">-->
+<!--              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>-->
+<!--              <div class="meta">-->
+<!--                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>-->
+<!--                <div><a href="#"><span class="icon-person"></span> Admin</a></div>-->
+<!--                <div><a href="#"><span class="icon-chat"></span> 19</a></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+        </div>
+      </div>
+<!--      <div class="col-md-2">-->
+<!--        <div class="ftco-footer-widget mb-4 ml-md-4">-->
+<!--          <h2 class="ftco-heading-2">Site Links</h2>-->
+<!--          <ul class="list-unstyled">-->
+<!--            <li><a routerLink="/" class="py-2 d-block">Home</a></li>-->
+<!--            <li><a routerLink="/about" class="py-2 d-block">About</a></li>-->
+<!--            <li><a routerLink="/schools" class="py-2 d-block">Schools</a></li>-->
+<!--            <li><a routerLink="/projects" class="py-2 d-block">Projects</a></li>-->
+<!--            <li><a routerLink="/gallery" class="py-2 d-block">Gallery</a></li>-->
+<!--            <li><a routerLink="/contact" class="py-2 d-block">Contact</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+      <div class="col-md-4">
+        <div class="ftco-footer-widget">
+          <h2 class="ftco-heading-2">Have Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon icon-map-marker"></span><span class="text">R-510/15 Federal B Area, Karachi</span></li>
+              <li><a href="tel:923002992469"><span class="icon icon-phone"></span><span class="text">+92 300 299 2469</span></a></li>
+              <li><a href="mailto:info@idaraalkhair.com"><span class="icon icon-envelope"></span><span class="text">info@idaraalkhair.com</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+          <li data-aos="fade-up"><a href="https://twitter.com/idara_al" target="_blank"><span style="color: white" class="icon-twitter"></span></a></li>
+          <li data-aos="fade-up"><a href="https://www.facebook.com/idaraalkhairwelfaresociety" target="_blank"><span style="color: white" class="icon-facebook"></span></a></li>
+          <li data-aos="fade-up"><a href="https://www.instagram.com/idaraalkhair/" target="_blank"><span style="color: white" class="icon-instagram"></span></a></li>
+          <li data-aos="fade-up"><a href="https://www.youtube.com/c/idaraalkhairwelfaresociety" target="_blank"><span style="color: white" class="icon-youtube-play"></span></a></li>
+          <!--            <li data-aos="fade-up" data-aos-once="true"><a href="https://www.linkedin.com/in/muhammad-mazahir-sheikh-26870b44/" target="_blank"><span class="icon-linkedin"></span></a></li>-->
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center my-4">
+
+        <p>
+          Copyright &copy; 1987 - {{today | date:'yyyy'}} All rights reserved | Idara Al-Khair
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+

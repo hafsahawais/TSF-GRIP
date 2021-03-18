@@ -1,0 +1,27 @@
+<app-banner [text]="'Schools'" [image]="'../../../assets/images/schools_banner.jpg'"></app-banner>
+<section id=timeline>
+  <h1>Schools and College</h1>
+  <!--  <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>-->
+  <div class="demo-card-wrapper" >
+    <div *ngFor="let school of schools; let i=index"  class="demo-card demo-card--step{{i+1}}" >
+      <div class="head">
+        <div class="number-box">
+          <span>0{{i+1}}</span>
+        </div>
+        <h2><span class="small">{{school.date}}</span> {{school.heading}}</h2>
+      </div>
+      <div class="body">
+        <p>
+          {{school.text}}
+          <a class="dialog-link" *ngIf="school.heading == 'AL-KHAIR CAMPUS 1' || school.heading == 'AL-KHAIR CAMPUS 2'
+           || school.heading == 'AL-KHAIR CAMPUS 3' || school.heading == 'AL-KHAIR COLLEGE' || school.heading == 'AL-KHAIR CAMPUS 5'
+           || school.heading == 'AL-KHAIR CAMPUS 6'"
+             (click)="openDialog(school.heading)">Read More</a>
+        </p>
+
+        <img [src]="school.image" alt="Graphic">
+      </div>
+    </div>
+
+  </div>
+</section>

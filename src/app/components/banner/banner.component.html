@@ -1,0 +1,12 @@
+<div class="hero-wrap" [ngStyle]="{'background-image': 'url(' + image + ')'}">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-7 text-center">
+        <h1 class="mt-4">{{text}}</h1>
+        <div *ngIf="text !== ''" class="text-underline"></div>
+<!--        <p *ngIf="text === 'Doing Nothing is Not An Option of Our Life'"><a  class="btn btn-white btn-outline-white px-4 py-3"><span class="icon-play mr-2"></span>Donate</a></p>-->
+      </div>
+    </div>
+  </div>
+</div>

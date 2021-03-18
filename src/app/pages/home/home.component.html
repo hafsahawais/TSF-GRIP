@@ -1,0 +1,231 @@
+<app-banner [text]="''" [image]="'../../../assets/images/banner.jpg'"></app-banner>
+<!--section below banner image-->
+<section data-aos="fade-up" class="ftco-counter ftco-intro" id="section-counter">
+  <div class="container">
+    <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="row no-gutters">
+      <div class="col-md-4 d-flex justify-content-center counter-wrap" data-aos="fade-up">
+        <div class="block-18 color-1 align-items-stretch">
+          <div class="text">
+            <h3 class="" style="color: white">Served Over</h3>
+            <strong class="number" counto [step]="'20'" [countTo]="'253145'" [countFrom]="'0'" [duration]="'4'" (countoChange)="counto = $event" >{{counto | number:'1.0-0' .toLocaleString()}}</strong>
+            <p>people since 1987</p>
+            <p><a href="/donate" class="btn btn-white px-3 py-2 mt-2">Donate For a Good Cause</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap" data-aos="fade-up">
+        <div class="block-18 color-2 align-items-stretch">
+          <div class="text">
+            <h3 class="" style="color: white">Educating</h3>
+            <strong class="number" counto [step]="'50'" [countTo]="'4550'" [countFrom]="'0'" [duration]="'4'" (countoChange)="counto2 = $event" >{{counto2 | number:'1.0-0' .toLocaleString()}}</strong>
+            <p>students in our 8 schools and a college.</p>
+            <p><a href="/donate" class="btn btn-white px-3 py-2 mt-2">Sponsor a Child</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap" data-aos="fade-up">
+        <div class="block-18 color-3 align-items-stretch">
+          <div class="text">
+            <h3 class="" style="color: white">Planted</h3>
+            <strong class="number" counto [step]="'20'" [countTo]="'575'" [countFrom]="'0'" [duration]="'4'" (countoChange)="counto3 = $event" >{{counto3 | number:'1.0-0' .toLocaleString()}}</strong>
+            <p>trees in the campuses and areas we work in.</p>
+            <p><a href="/donate" class="btn btn-white px-3 py-2 mt-2">Plant a Tree</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--our mission-->
+<section class="ftco-section">
+  <div class="container">
+    <h4 data-aos="fade-up" class="text-center"><i>What We Do?</i></h4>
+    <h1 data-aos="fade-up" class="text-center" style="font-size: 4.5rem">We’re On A Mission To Solve<br/>These Problems</h1>
+    <div class="row mt-5">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex align-self-stretch" data-aos="fade-up">
+        <div class="media block-6 p-3 py-4 d-block">
+          <img src='../../../assets/icons/student.svg' width="50" height="50" class="mb-3"/>
+          <div class="icon" style="background: #f7a900;"></div>
+          <div class="media-body ">
+            <h3 class="heading">Education</h3>
+            <p>Idara Al-Khair strives to provide free education to children living in the impoverished areas of Pakistan. We currently operate eight schools and a college.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex align-self-stretch" data-aos="fade-up">
+        <div class="media block-6 p-3 py-4 d-block">
+          <img src='../../../assets/icons/sewing.svg' width="50" height="50" class="mb-3"/>
+          <div class="icon" style="background: #3cc88f;"></div>
+          <div class="media-body ">
+            <h3 class="heading">Skills Development</h3>
+            <p>Technical training centers have been established for both boys and girls, where girls are provided training on stitching and sewing, and boys are taught khaadi work.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex align-self-stretch" data-aos="fade-up">
+        <div class="media block-6 p-3 py-4 d-block">
+          <img src='../../../assets/icons/food.svg' width="50" height="50" class="mb-3"/>
+          <div class="icon" style="background: #C8BC3C;"></div>
+          <div class="media-body ">
+            <h3 class="heading">Food and Water</h3>
+            <p>Al-Khair has been efficiently conducting a proper management program for the distribution of lunches and ration bags to deserving students and their parents since the last 20 years.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 d-flex align-self-stretch" data-aos="fade-up">
+        <div class="media block-6 p-3 py-4 d-block">
+          <img src='../../../assets/icons/drug.svg' width="50" height="50" class="mb-3"/>
+          <div class="icon" style="background: #21d7d9;"></div>
+          <div class="media-body ">
+            <h3 class="heading">Medical Facilities</h3>
+            <p>While basic medical facilities are provided to all students, Al-Khair has launched an initiative to establish a full-fledged medical department to handle regular and emergency medical cases of our students and their parents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--our causes-->
+<section class="ftco-section causes-section">
+  <div class="container-fluid">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-5 heading-section text-center" data-aos="fade-up">
+        <h2 class="mb-4">Our Social Welfare Activities</h2>
+<!--        <p>Other Social Welfare Activities.</p>-->
+      </div>
+    </div>
+
+    <!--Swiper-->
+    <div data-aos="fade-up" [swiper]="config" class="swiper-container">
+      <div class="swiper-wrapper activities-slider">
+        <div *ngFor="let slide of slides" class="swiper-slide">
+          <div class="swiper-content">
+            <div class="hero" [ngStyle]="{'background-image': 'url('+ slide.image +')'}"></div>
+            <div class="copy">
+              <h1>{{slide.heading}}</h1>
+              <h3>{{slide.subheading}}</h3>
+              <p>{{slide.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+  </div>
+</section>
+<!--latest events-->
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section  text-center" data-aos="fade-up">
+        <h2 class="mb-4">Some of Our Events</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let event of events" class="col-md-4 d-flex " data-aos="fade-up">
+        <div class="blog-entry align-self-stretch">
+          <a class="block-20" [ngStyle]="{'background-image': 'url('+ event.image + ')'}">
+          </a>
+          <div class="text p-4 d-block">
+            <!--            <div class="meta mb-3">-->
+            <!--              <div><a href="#">Sep. 10, 2018</a></div>-->
+            <!--              <div><a href="#">Admin</a></div>-->
+            <!--              <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
+            <!--            </div>-->
+            <h3 class="heading mb-4"><a href="#">{{event.name}}</a></h3>
+            <!--            <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>-->
+            <p>{{event.description}}</p>
+<!--            <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--testimonials-->
+<section [swiper]="testimonialConfig" class="p-0 swiper-container">
+      <div class="swiper-wrapper">
+        <div *ngFor="let testimonial of testimonials" class="p-0 swiper-slide">
+          <div class="swiper-content">
+            <div [ngStyle]="{'background-image': 'url(' + testimonial.backgroundImage + ')'}" class="w-100 h-100 text-center testimonial-content">
+              <div data-aos="fade-up" class="testimonial-text">
+                <p>{{testimonial.review}}
+                  <a class="dialog-link"
+                     (click)="openDialog(testimonial.name)">Read More</a>
+                </p>
+                <div class="cd-author">
+                  <img src="{{testimonial.image}}" alt="Author image">
+                  <ul class="cd-author-info">
+                    <li><strong>{{testimonial.name}}</strong><br><span>{{testimonial.handle}}</span></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+<!--    </div>-->
+
+</section>
+<!--volunteer form-->
+<section class="ftco-section-3 img" style="background-image: url('../../../assets/images/volunteers.jpg');background-position: bottom">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row d-md-flex">
+      <div class="col-md-6 d-flex " data-aos="fade-up">
+        <div class="img img-2 align-self-stretch" style="background-image: url('../../../assets/images/volunteers1.jpg');"></div>
+      </div>
+      <div class="col-md-6 volunteer pl-md-5 " data-aos="fade-up">
+        <h3 class="mb-3">Be a volunteer</h3>
+        <form action="#" class="volunter-form" [formGroup]="volunteerForm">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name" formControlName="name">
+          </div>
+          <div *ngIf="volunteerForm.controls['name'].invalid && (volunteerForm.controls['name'].dirty || volunteerForm.controls['name'].touched)" class="alert alert-danger">
+            <div *ngIf="volunteerForm.controls['name'].errors.required">
+              Name is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email" formControlName="email">
+          </div>
+          <div *ngIf="volunteerForm.controls['email'].invalid && (volunteerForm.controls['email'].dirty || volunteerForm.controls['email'].touched)" class="alert alert-danger">
+            <div *ngIf="volunteerForm.controls['email'].errors.required">
+              Email is required.
+            </div>
+            <div *ngIf="volunteerForm.controls['email'].dirty && !volunteerForm.controls['email'].errors.required">
+              Email format is incorrect.
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" placeholder="Your Phone" formControlName="phone">
+          </div>
+          <div *ngIf="volunteerForm.controls['phone'].invalid && (volunteerForm.controls['phone'].dirty || volunteerForm.controls['phone'].touched)" class="alert alert-danger">
+            <div *ngIf="volunteerForm.controls['phone'].errors.required">
+              Phone number is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message" formControlName="message"></textarea>
+          </div>
+          <div *ngIf="volunteerForm.controls['message'].invalid && (volunteerForm.controls['message'].dirty || volunteerForm.controls['message'].touched)" class="alert alert-danger">
+            <div *ngIf="volunteerForm.controls['message'].errors.required">
+              Message is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Send Message" class="btn btn-white py-3 px-5" (click)="sendVolunteerRegisteration(volunteerForm.controls['name'].value, volunteerForm.controls['email'].value, volunteerForm.controls['phone'].value,volunteerForm.controls['message'].value)">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

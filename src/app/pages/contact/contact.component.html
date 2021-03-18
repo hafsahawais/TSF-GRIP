@@ -1,0 +1,74 @@
+<app-banner [text]="'Contact Us'" [image]="'./../../assets/images/about_banner.jpg'">Contact Us</app-banner>
+<section class="ftco-section contact-section ftco-degree-bg">
+  <div class="container">
+    <div class="row d-flex mb-5 contact-info">
+      <div class="col-md-12 mb-4">
+        <h2 class="h4">Contact Information</h2>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-md-3">
+        <p><span>Address:</span> {{address}}</p>
+      </div>
+      <div class="col-md-3">
+        <p><span>Phone:</span> <a [href]="'tel:' + phone.split(' ').join('')">	{{phone}}</a><br/><a class="ml-5" [href]="'tel:' + phone2.split(' ').join('')">	{{phone2}}</a></p>
+      </div>
+      <div class="col-md-3">
+        <p><span>Email:</span> <a href="mailto:info@idaraalkhair.com">{{email}}</a></p>
+      </div>
+      <div class="col-md-3">
+        <p><span>Website:</span> <a href="#">{{website}}</a></p>
+      </div>
+    </div>
+    <div class="row block-9">
+      <div class="col-md-6 pr-md-5">
+        <h4 class="mb-4">Do you have any questions?</h4>
+        <form action="#" [formGroup]="feedbackForm" >
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name" formControlName="name" required>
+          </div>
+          <div *ngIf="feedbackForm.controls['name'].invalid && (feedbackForm.controls['name'].dirty || feedbackForm.controls['name'].touched)" class="alert alert-danger">
+            <div *ngIf="feedbackForm.controls['name'].errors.required">
+              Name is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email" formControlName="email" required>
+          </div>
+          <div *ngIf="feedbackForm.controls['email'].invalid && (feedbackForm.controls['email'].dirty || feedbackForm.controls['email'].touched)" class="alert alert-danger">
+            <div *ngIf="feedbackForm.controls['email'].errors.required">
+              Email is required.
+            </div>
+            <div *ngIf="feedbackForm.controls['email'].dirty && !feedbackForm.controls['email'].errors.required">
+             Email format is incorrect
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Subject" formControlName="subject" required>
+          </div>
+          <div *ngIf="feedbackForm.controls['subject'].invalid && (feedbackForm.controls['subject'].dirty || feedbackForm.controls['subject'].touched)" class="alert alert-danger">
+            <div *ngIf="feedbackForm.controls['subject'].errors.required">
+              Subject is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message" formControlName="message" required></textarea>
+          </div>
+          <div *ngIf="feedbackForm.controls['message'].invalid && (feedbackForm.controls['message'].dirty || feedbackForm.controls['message'].touched)" class="alert alert-danger">
+            <div *ngIf="feedbackForm.controls['message'].errors.required">
+              Name is required.
+            </div>
+          </div>
+<!--          <flash-messages></flash-messages>-->
+          <div class="form-group">
+            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5"  (click)="sendMail(feedbackForm.controls['name'].value, feedbackForm.controls['email'].value, feedbackForm.controls['subject'].value, feedbackForm.controls['message'].value)">
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-md-6 col-xs-4" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7232.233055964844!2d67.06985407625426!3d24.996156081171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb34123801a71e9%3A0xe5bac7442b1e8f41!2sIdara%20Al%20Khair%20Campus%201!5e0!3m2!1sen!2s!4v1595516863915!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
