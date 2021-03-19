@@ -119,7 +119,7 @@ export class SchoolsComponent implements OnInit {
         width:'750px',
         data: {
           date: '',
-          color:'#3E5D7D',
+          color:'#FAA99C',
           heading: name,
           text: '<p><ul>' +
             '<li>Join our discussion forum - The Sparks Foundation Network group on LinkedIn</li> ' +
@@ -136,8 +136,8 @@ export class SchoolsComponent implements OnInit {
         hasBackdrop: true,
         width:'750px',
         data: {
-          date: 'ESTABLISHED IN 2012',
-          color:'#224469',
+          date: '',
+          color:'#37A9DD',
           heading: name,
           text: '<p><ul>' +
             '<li>Open Interest Form : GRIP@TSF to select your domain</li> ' +
@@ -154,7 +154,7 @@ export class SchoolsComponent implements OnInit {
         width:'750px',
         data: {
           date: '',
-          color:'#052B54',
+          color:'#B0D85B',
           heading: name,
           text: '<p><ul> ' +
             '<li>GRIP selection certificates are sent in the last week of each month after evaluating your profile</li> ' +
@@ -172,7 +172,7 @@ export class SchoolsComponent implements OnInit {
         width:'750px',
         data: {
           date: '',
-          color:'#191C50',
+          color:'#FAA99C',
           heading: name,
           text: '<p>By now, you should have completed these:</p> ' +
             '<p><ul> ' +
@@ -185,47 +185,48 @@ export class SchoolsComponent implements OnInit {
         }
       });
     }
-    else if(name === 'AL-KHAIR CAMPUS 6') {
-      this.dialog.open(SchoolDialog,{
-        hasBackdrop: true,
-        width:'750px',
-        data: {
-          date: 'ESTABLISHED IN 2015',
-          color:'#82a6b1',
-          heading: name,
-          text: '<p>Al-Khair Primary School (campus-VI) is located in Yaroo Goth, Karachi, and was inaugurated in 2015. It was composed of 500 students and 27 teachers, and its building comprised 16 classrooms. However, in 2017, we lost the lease to the premises and appealed to Thaakat Foundation for support. It is due to its timely aid that we are currently building a new facility for Campus-VI.</p>'
-        }
-      });
-    }
-    else if(name === 'AL-KHAIR CAMPUS 7') {
-      this.dialog.open(SchoolDialog,{
-        hasBackdrop: true,
-        width:'750px',
-        data: {
-          date: 'ESTABLISHED IN 2017',
-          color:'#3E5D7D',
-          heading: name,
-          text: '<p>Al-Khair Primary School (campus-VII) was established in 2017, and is made up of 5 classrooms, 100 students and 6 teachers.</p>'
-        }
-      });
-    }
-    else if(name === 'AL-KHAIR CAMPUS 8') {
-      this.dialog.open(SchoolDialog,{
-        hasBackdrop: true,
-        width:'750px',
-        data: {
-          date: 'ESTABLISHED IN 2020',
-          color:'#224469',
-          heading: name,
-          text: '<h2>lorem ipsum</h2><p>hjkdsjhljkhajhljhfdsjk</p>'
-        }
-      });
-    } else if(name === 'Create your profile on My Credible Info') {
+    // else if(name === 'AL-KHAIR CAMPUS 6') {
+    //   this.dialog.open(SchoolDialog,{
+    //     hasBackdrop: true,
+    //     width:'750px',
+    //     data: {
+    //       date: 'ESTABLISHED IN 2015',
+    //       color:'#82a6b1',
+    //       heading: name,
+    //       text: '<p>Al-Khair Primary School (campus-VI) is located in Yaroo Goth, Karachi, and was inaugurated in 2015. It was composed of 500 students and 27 teachers, and its building comprised 16 classrooms. However, in 2017, we lost the lease to the premises and appealed to Thaakat Foundation for support. It is due to its timely aid that we are currently building a new facility for Campus-VI.</p>'
+    //     }
+    //   });
+    // }
+    // else if(name === 'AL-KHAIR CAMPUS 7') {
+    //   this.dialog.open(SchoolDialog,{
+    //     hasBackdrop: true,
+    //     width:'750px',
+    //     data: {
+    //       date: 'ESTABLISHED IN 2017',
+    //       color:'#3E5D7D',
+    //       heading: name,
+    //       text: '<p>Al-Khair Primary School (campus-VII) was established in 2017, and is made up of 5 classrooms, 100 students and 6 teachers.</p>'
+    //     }
+    //   });
+    // }
+    // else if(name === 'AL-KHAIR CAMPUS 8') {
+    //   this.dialog.open(SchoolDialog,{
+    //     hasBackdrop: true,
+    //     width:'750px',
+    //     data: {
+    //       date: 'ESTABLISHED IN 2020',
+    //       color:'#224469',
+    //       heading: name,
+    //       text: '<h2>lorem ipsum</h2><p>hjkdsjhljkhajhljhfdsjk</p>'
+    //     }
+    //   });
+    // }
+    else if(name === 'Create your profile on My Credible Info') {
       this.dialog.open(SchoolDialog,{
         width:'750px',
         data: {
           date: '',
-          color:'#224469',
+          color:'#EDC67B',
           heading: name,
           text: '<p><ul>' +
             '<li>Open this link (<a href="https://mycredible.info/login">https://mycredible.info/</a>) create your profile and submit details' +
