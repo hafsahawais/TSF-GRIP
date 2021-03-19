@@ -1,6 +1,6 @@
-<app-banner [text]="'Schools'" [image]="'../../../assets/images/schools_banner.jpg'"></app-banner>
+<app-banner [text]="'Steps to Apply'" [image]="'../../../assets/images/schools_banner.jpg'"></app-banner>
 <section id=timeline>
-  <h1>To obtain GRIP Selection Certificate</h1>
+  <h1>To obtain a GRIP Selection Certificate</h1>
   <!--  <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>-->
   <div class="demo-card-wrapper" >
     <div *ngFor="let school of schools; let i=index"  class="demo-card demo-card--step{{i+1}}" >
@@ -14,8 +14,8 @@
         <p>
           {{school.text}}
           <a class="dialog-link" *ngIf="school.heading == 'Confirm Your Internship Function' || school.heading == 'Join TSF Network'
-           || school.heading == 'Share your Preferred Internship Experience' || school.heading == 'Create your profile on My Credible Info' || school.heading == 'AL-KHAIR CAMPUS 5'
-           || school.heading == 'AL-KHAIR CAMPUS 6'"
+           || school.heading == 'Share your Preferred Internship Experience' || school.heading == 'Create your profile on My Credible Info' || school.heading == 'Wait for GRIP Selection Certificate'
+           || school.heading == 'Step Completion Checklist'"
              (click)="openDialog(school.heading)">Read More</a>
         </p>
 

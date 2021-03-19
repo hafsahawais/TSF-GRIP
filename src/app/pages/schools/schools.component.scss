@@ -43,12 +43,10 @@ $marker-size: 9px;
 /* Colors */
 
 $steps: #6a7686;
-$colors: #82a6b1,
-#3e5d7d,
-#224469,
-#4d92eb,
-#052b54,
-#191c50;
+$colors: #B0D85B,
+#FAA99C,
+#37A9DD,
+#EDC67B;
 $timeline: #6a7686;
 
 /* Calculations */
@@ -253,7 +251,7 @@ body {
     }
     @for $i from 1 through $items {
       &--step#{$i} {
-        $color: nth($colors, ((($i - 1) % 6) + 1));
+        $color: nth($colors, ((($i - 1) % 4) + 1));
         background-color: $color;
         .head::after {
           border-color: $color;
