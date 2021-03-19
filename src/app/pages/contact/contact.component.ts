@@ -11,11 +11,12 @@ import { ContactService } from '../../services/contact.service';
 export class ContactComponent implements OnInit {
   feedbackForm: FormGroup;
   feedback: Feedback;
-  address = "R-510/15 Federal B Area, Karachi";
-  phone2 = "+92 300 299 2469";
-  phone = "+92 300 211 2609";
-  email = "\tinfo@idaraalkhair.com" + "\nidaraalkhair@hotmail.com";
-  website = " idaraalkhair.com";
+  address = " THE HANGAR, NUS ENTERPRISE\n" +
+    "21 HENG MUI KENG TERRACE, SINGAPORE, 119613";
+  phone2 = " +65-8402-8590";
+  phone = " +65-8402-8590";
+  email = " info@thesparksfoundation.sg";
+  website = "https://thesparksfoundationsingapore.org";
 
   constructor(private fb: FormBuilder,
               private ContactService: ContactService,
