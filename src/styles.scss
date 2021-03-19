@@ -40,10 +40,10 @@ $white: #fff;
 $black: #000;
 $darken: #4a5562;
 
-$primary: #3e5d7d;
-$secondary: #224469;
-$tertiary: #052b54;
-$quarternary: #191c50;
+$primary: #FAA99C;
+$secondary: #37A9DD;
+$tertiary: #EDC67B;
+$quarternary:#7198A9;
 
 
 @mixin border-radius($radius) {
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #061533!important;
+    background: #B0D85B!important;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
     .nav-item {
       &.active {
@@ -1300,7 +1300,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   padding: 7em 0 0 0;
-  background: #313e50;
+  background: #B0D85B;
   .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em;

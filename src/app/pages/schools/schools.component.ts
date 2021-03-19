@@ -22,7 +22,7 @@ export class SchoolsComponent implements OnInit {
   public schools = [
     {
       date: '',
-      color: '',
+      color: '#B0D85B',
       heading: 'Confirm Your Internship Function',
       // tslint:disable-next-line:max-line-length
       text: 'Go through the brief JD of internships below to make sure you have applied or are applying for the correct one...',
@@ -49,24 +49,26 @@ export class SchoolsComponent implements OnInit {
       image: '../../../../assets/images/schools/campus3.jpg'
     },
     {
-      date: 'ESTABLISHED IN 2015',
+      date: '',
       color: '',
-      heading: 'AL-KHAIR CAMPUS 4',
-      text: 'Al-Khair Primary School (campus-IV) is situated in Ayub Goth, Manghopir Road, Karachi, and was established in 2015. This campus consists of 3 classrooms, 56 students and 3 teachers.',
+      heading: 'Wait for GRIP Selection Certificate',
+      text: 'GRIP selection certificates are sent in the last week of each month after evaluating your profile...',
       image: '../../../../assets/images/schools/campus4.jpg'
     },{
-      date: 'ESTABLISHED IN 2015',
+      date: '',
       color: '',
-      heading: 'AL-KHAIR CAMPUS 5',
-      text: 'Al-Khair College of Higher Education, stationed in North Karachi Sector 5M, Karachi, was established in 2008, and currently provides intermediate....',
+      heading: 'Step Completion Checklist',
+      text: 'By now, you should have completed these....',
       image: '../../../../assets/images/schools/campus5.jpg'
-    },{
+    },
+    {
       date: 'ESTABLISHED IN 2015',
       color: '',
       heading: 'AL-KHAIR CAMPUS 6',
       text: 'Al-Khair Primary School (campus-VI) is located in Yaroo Goth, Karachi, and was inaugurated in 2015....',
       image: '../../../../assets/images/schools/campus6.jpg'
-    },{
+    },
+    {
       date: 'ESTABLISHED IN 2017',
       color: '',
       heading: 'AL-KHAIR CAMPUS 7',
@@ -88,7 +90,7 @@ export class SchoolsComponent implements OnInit {
         width:'750px',
         data: {
           date: '',
-          color:'#82a6b1',
+          color:'#B0D85B',
           heading: name,
           text: '<p> <ul> <li>' +
             'Go through the brief JD of internships below to make sure you have applied or are applying for the correct one</li>' +
@@ -146,29 +148,44 @@ export class SchoolsComponent implements OnInit {
             '</ul></p>'
         }
       });
-    } else if(name === 'AL-KHAIR CAMPUS 4') {
+    } else if(name === 'Wait for GRIP Selection Certificate') {
       this.dialog.open(SchoolDialog,{
         hasBackdrop: true,
         width:'750px',
         data: {
-          date: 'ESTABLISHED IN 2015',
+          date: '',
           color:'#052B54',
           heading: name,
-          text: '<p>Al-Khair Primary School (campus-IV) is situated in Ayub Goth, Manghopir Road, Karachi, and was established in 2015. This campus consists of 3 classrooms, 56 students and 3 teachers.</p>'
+          text: '<p><ul> ' +
+            '<li>GRIP selection certificates are sent in the last week of each month after evaluating your profile</li> ' +
+            '<li>You must complete steps 3 & 4 to get selection Certificate, even if you are selected on a job portal like intershala</li> ' +
+            '<li>Read the FAQs to understand GRIPs timeline and structure: <a href="https://docs.google.com/document/d/1EUo3Vly4C9ym6OW8tjJsbMzJUnBoFXwuSh-Pit9vNso/edit">https://docs.google.com/document/d/1EUo3Vly4C9ym6OW8tjJsbMzJUnBoFXwuSh-Pit9vNso/edit</a></li> ' +
+            '<li>All announcements will be made in TSF Network as mentioned in Step 2</li> ' +
+            '<li>There may be no communication or acknowledgement email from our end between your application and us sending you a selection certificate.</li>' +
+            '</ul></p>'
         }
       });
-    } else if(name === 'AL-KHAIR CAMPUS 5') {
+
+    } else if(name === 'Step Completion Checklist') {
       this.dialog.open(SchoolDialog,{
         hasBackdrop: true,
         width:'750px',
         data: {
-          date: 'ESTABLISHED IN 2015',
+          date: '',
           color:'#191C50',
           heading: name,
-          text: '<p>Al-Khair Primary School (campus-V) is situated in Gul Muhammad Goth, Bun Murad, Manghopir, Karachi, and was established in 2015. This campus constitutes 6 classrooms, 460 students and 21 teachers.</p>'
+          text: '<p>By now, you should have completed these:</p> ' +
+            '<p><ul> ' +
+            '<p><ul><li>Join TSF Network group on LinkedIn</li></ul></p>' +
+            '<p><ul><li>Filled the interests Form: GRIP@TSF</li></ul></p>' +
+            '<p><ul><li>Aware that GRIP Selection certificate will be sent by the last day of the month and your internship starts in the first week of the next month</li></ul></p> ' +
+            '<li>Again for my credible info queries, please read the guidelines document and for GRIP related queries, refer to FAQs</li>' +
+            '<li>If you have a question not covered in the above two documents or not answered in TSF Network, write us on the grip@thesparksfoundation.sg</li>' +
+            '</ul></p>'
         }
       });
-    } else if(name === 'AL-KHAIR CAMPUS 6') {
+    }
+    else if(name === 'AL-KHAIR CAMPUS 6') {
       this.dialog.open(SchoolDialog,{
         hasBackdrop: true,
         width:'750px',
@@ -179,7 +196,8 @@ export class SchoolsComponent implements OnInit {
           text: '<p>Al-Khair Primary School (campus-VI) is located in Yaroo Goth, Karachi, and was inaugurated in 2015. It was composed of 500 students and 27 teachers, and its building comprised 16 classrooms. However, in 2017, we lost the lease to the premises and appealed to Thaakat Foundation for support. It is due to its timely aid that we are currently building a new facility for Campus-VI.</p>'
         }
       });
-    } else if(name === 'AL-KHAIR CAMPUS 7') {
+    }
+    else if(name === 'AL-KHAIR CAMPUS 7') {
       this.dialog.open(SchoolDialog,{
         hasBackdrop: true,
         width:'750px',
@@ -190,7 +208,8 @@ export class SchoolsComponent implements OnInit {
           text: '<p>Al-Khair Primary School (campus-VII) was established in 2017, and is made up of 5 classrooms, 100 students and 6 teachers.</p>'
         }
       });
-    } else if(name === 'AL-KHAIR CAMPUS 8') {
+    }
+    else if(name === 'AL-KHAIR CAMPUS 8') {
       this.dialog.open(SchoolDialog,{
         hasBackdrop: true,
         width:'750px',
