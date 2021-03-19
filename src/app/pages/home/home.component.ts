@@ -41,14 +41,14 @@ export class HomeComponent implements OnInit {
   ]
   public slides = [
     {
-      image: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80',
+      image: '../../../../assets/images/phone.jpg',
       heading: 'Scheduled Calls',
       subheading: '',
       // tslint:disable-next-line:max-line-length
       text: 'Regular contact with core team members via live sessions.'
     },
     {
-      image: '../../../../assets/images/OrphanCareProgram.jpg',
+      image: '../../../../assets/images/orphan.png',
       heading: 'Mentor Support',
       subheading: '',
       text: 'Our mentors are there to guide and support you at any time. You can reach the mentors through email or whatsapp.'
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
       text: 'You will be asked to join The Sparks Foundation Network group on LinkedIn. Here ,your mentors and facilitators will answer your task queries.'
     },
     {
-      image: '../../../../assets/images/technicalEducation.jpg',
+      image: '../../../../assets/images/support.png',
       heading: 'On Demand Support',
       subheading: '',
       text: 'If you feel the need, you can mail us for help. We will guide you to the correct resources.'
