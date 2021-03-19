@@ -8,18 +8,8 @@ import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
 })
 export class AboutComponent implements OnInit {
 
-  heading = 'Welcome to Welfare Stablished Since 1898';
-  text = '<p>To emphasize the needs and importance of Education in this millennium will ' +
-    'be nothing but stereotyped mere words and waste time. The most depressive and frustrating picture ' +
-    'about imparting Education and improving literacy rate in the downtrodden and backward section of society is ' +
-    'the matter of concern for all of us. The question is who would actually reach them and teach an unwilling child. On the ' +
-    'other hand the parents of such children are themselves non cooperative and reluctant to give education to their children for ' +
-    'many reasons. A most backward colony in a slum area named Mustafa colony in New Karachi was selected which was full of ' +
-    'usual anti social activities like addiction, robbery, child labor, wandering, stealing etc. A jhuggi (hut/make shift) was' +
-    ' acquired and teaching started initially with only two students. Idara Al-Khair welfare society was formed and registered' +
-    ' in year 1987. After a period of working of more than 25 years with constant devotion, dedication and kind support ' +
-    'of several philanthropist, individuals and organizations. ' +
-    'We have been able to establish schools, basic health centers’ and vocational training center.</p>';
+  heading = 'About The Sparks Foundation (TSF)';
+  text = '<p>The Sparks Foundation is a not-for-profit organization registered in India and Singapore and operating globally.<br/><br/>We inspire students to innovate and help them integrate to build better humankind.</p>';
 
   public config: SwiperConfigInterface = {
     slidesPerView: 6,

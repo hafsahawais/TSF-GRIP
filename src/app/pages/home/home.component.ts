@@ -25,93 +25,89 @@ export class HomeComponent implements OnInit {
   public events = [
     {
       image: '../../../../assets/images/splash.jpg',
-      name: 'Splash',
-      description: 'An extremely cool event that aims to brighten up the environment of Al-Khair\'s schools by means of enthusiastic volunteers who paint their hearts out on school walls so that they look presentable..'
+      name: 'Unpaid Internship',
+      description: "This is an unpaid internship of a month during which you'll be trained, mentored and observed future role."
     },
     {
       image: '../../../../assets/images/SummerInternship.jpg',
-      name: 'Summer Internship',
-      description: 'A unique experience of spending a few days with the underprivileged students of Idara Al-Khair with exciting activities like teaching, motivational lectures and other fun activities with the students..'
+      name: 'Flexible working hours',
+      description: 'During the course of the internship you will be expected to work from home with the flexibility to manage your time. The tasks assigned are easy and can be finished in your extra time.'
     },
     {
       image: '../../../../assets/images/iftardrive.jpg',
-      name: 'Iftar Drive',
-      description: 'Every year, Idara Al-Khair hosts iftars at all its campuses where more than 10,000 underprivileged people gather and enjoy fulfilling and scrumptious iftaar during Ramadan. These drives are deemed a hit every year owing to the teachers who volunteers and make it possible.'
+      name: 'Own computers and internet',
+      description: "You'll use your own computers with internet connections and coordinate with your team members through Whatsapp or Google Hangout calls, etc."
     },
   ]
   public slides = [
     {
       image: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80',
-      heading: 'MEDICAL FACILITIES',
+      heading: 'Scheduled Calls',
       subheading: '',
       // tslint:disable-next-line:max-line-length
-      text: 'Al-Khair has launched an initiative to establish a full-fledged medical ' +
-        'department to handle regular and emergency medical cases of its students and their parents.'
+      text: 'Regular contact with core team members via live sessions.'
     },
     {
       image: '../../../../assets/images/OrphanCareProgram.jpg',
-      heading: 'ORPHAN CARE PROGRAM',
+      heading: 'Mentor Support',
       subheading: '',
-      text: 'Al-Khair strives to provide a loving and caring environment for its orphan students, and ensures that they recieve ' +
-        'full exposure to family relations and common societal chores.'
+      text: 'Our mentors are there to guide and support you at any time. You can reach the mentors through email or whatsapp.'
     },
     {
       image: '../../../../assets/images/waterwell.jpg',
-      heading: 'CLEAN WATER FOR ALL',
+      heading: 'Discussion Forum',
       subheading: '',
-      text: 'Complete installation of a total of 3 wells has been overseen by Al-Khair in areas ' +
-        'where clean drinking water was either scant or totally non-existent.'
+      text: 'You will be asked to join The Sparks Foundation Network group on LinkedIn. Here ,your mentors and facilitators will answer your task queries.'
     },
     {
       image: '../../../../assets/images/technicalEducation.jpg',
-      heading: 'TECHNICAL EDUCATION',
+      heading: 'On Demand Support',
       subheading: '',
-      text: 'Apart from making basic education possible, Al-Khair aims to provide training on technical skills by' +
-        ' means of its technical centres for both boys and girls.'
+      text: 'If you feel the need, you can mail us for help. We will guide you to the correct resources.'
     },
-    {
-      image: '../../../../assets/images/scholarships.jpg',
-      heading: 'SCHOLARSHIPS FOR HIGHER EDUCATION',
-      subheading: '',
-      text: 'Al-Khair has launched a Scholarship Program which enables its alumni with poor ' +
-        'financial conditions to complete their further education.'
-    },
-    {
-      image: '../../../../assets/images/environmentalSustainability.jpg',
-      heading: 'ENVIRONMENTAL SUSTAINABILITY',
-      subheading: '',
-      text: 'From conducting awareness campaigns on clean energy to promoting recycling, Al-Khair always takes ' +
-        'the environment and its sustainability into serious consideration.'
-    },
-    {
-      image: '../../../../assets/images/daily_lunch.jpg',
-      heading: 'FOOD SUPPORT PROGRAM',
-      subheading: '',
-      text: 'Al-khair efficiently conducts a proper management program for the distribution of lunches and ration bags to its ' +
-        'deserving students and their parents.'
-    },
-    {
-      image: '../../../../assets/images/EducationThroughGarbage.jpg',
-      heading: 'EDUCATION THROUGH GARBAGE',
-      subheading: '',
-      // tslint:disable-next-line:max-line-length
-      text: 'To meet their running expenses, Idara Al-Khair has adopted the brilliant strategy of collecting useful recyclable ' +
-        'items from garbage and selling them to vendors on a dialy basis.'
-    },
-    {
-      image: '../../../../assets/images/qurbani.jpg',
-      heading: 'QURBANI',
-      subheading: '',
-      text: 'Idara Al-Khair organizes an annual Qurbani Program to distribute meat ' +
-        'amongst 2500 students\' families on the occasion of Eid-ul-Adha.'
-    },
-    {
-      image: '../../../../assets/images/HelpADream.jpg',
-      heading: 'HELP A DREAM',
-      subheading: '',
-      text: 'Through this campaign, Al-khair appeals donors to sponsor the education of atleast ' +
-        'one poor child by means of a proper agreement plan.'
-    }
+    // {
+    //   image: '../../../../assets/images/scholarships.jpg',
+    //   heading: 'SCHOLARSHIPS FOR HIGHER EDUCATION',
+    //   subheading: '',
+    //   text: 'Al-Khair has launched a Scholarship Program which enables its alumni with poor ' +
+    //     'financial conditions to complete their further education.'
+    // },
+    // {
+    //   image: '../../../../assets/images/environmentalSustainability.jpg',
+    //   heading: 'ENVIRONMENTAL SUSTAINABILITY',
+    //   subheading: '',
+    //   text: 'From conducting awareness campaigns on clean energy to promoting recycling, Al-Khair always takes ' +
+    //     'the environment and its sustainability into serious consideration.'
+    // },
+    // {
+    //   image: '../../../../assets/images/daily_lunch.jpg',
+    //   heading: 'FOOD SUPPORT PROGRAM',
+    //   subheading: '',
+    //   text: 'Al-khair efficiently conducts a proper management program for the distribution of lunches and ration bags to its ' +
+    //     'deserving students and their parents.'
+    // },
+    // {
+    //   image: '../../../../assets/images/EducationThroughGarbage.jpg',
+    //   heading: 'EDUCATION THROUGH GARBAGE',
+    //   subheading: '',
+    //   // tslint:disable-next-line:max-line-length
+    //   text: 'To meet their running expenses, Idara Al-Khair has adopted the brilliant strategy of collecting useful recyclable ' +
+    //     'items from garbage and selling them to vendors on a dialy basis.'
+    // },
+    // {
+    //   image: '../../../../assets/images/qurbani.jpg',
+    //   heading: 'QURBANI',
+    //   subheading: '',
+    //   text: 'Idara Al-Khair organizes an annual Qurbani Program to distribute meat ' +
+    //     'amongst 2500 students\' families on the occasion of Eid-ul-Adha.'
+    // },
+    // {
+    //   image: '../../../../assets/images/HelpADream.jpg',
+    //   heading: 'HELP A DREAM',
+    //   subheading: '',
+    //   text: 'Through this campaign, Al-khair appeals donors to sponsor the education of atleast ' +
+    //     'one poor child by means of a proper agreement plan.'
+    // }
   ]
 
   public testimonials = [
