@@ -61,27 +61,27 @@ export class SchoolsComponent implements OnInit {
       text: 'By now, you should have completed these....',
       image: '../../../../assets/images/schools/campus5.jpg'
     },
-    {
-      date: 'ESTABLISHED IN 2015',
-      color: '',
-      heading: 'AL-KHAIR CAMPUS 6',
-      text: 'Al-Khair Primary School (campus-VI) is located in Yaroo Goth, Karachi, and was inaugurated in 2015....',
-      image: '../../../../assets/images/schools/campus6.jpg'
-    },
-    {
-      date: 'ESTABLISHED IN 2017',
-      color: '',
-      heading: 'AL-KHAIR CAMPUS 7',
-      text: 'Al-Khair Primary School (campus-VII) was established in 2017, and is made up of 5 classrooms, 100 students and 6 teachers.',
-      image: '../../../../assets/images/schools/campus7.jpg'
-    },
-    {
-      date: 'ESTABLISHED IN 2020',
-      color: '',
-      heading: 'AL-KHAIR CAMPUS 8',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam....',
-      image: '../../../../assets/images/schools/campus8.jpg'
-    },
+    // {
+    //   date: 'ESTABLISHED IN 2015',
+    //   color: '',
+    //   heading: 'AL-KHAIR CAMPUS 6',
+    //   text: 'Al-Khair Primary School (campus-VI) is located in Yaroo Goth, Karachi, and was inaugurated in 2015....',
+    //   image: '../../../../assets/images/schools/campus6.jpg'
+    // },
+    // {
+    //   date: 'ESTABLISHED IN 2017',
+    //   color: '',
+    //   heading: 'AL-KHAIR CAMPUS 7',
+    //   text: 'Al-Khair Primary School (campus-VII) was established in 2017, and is made up of 5 classrooms, 100 students and 6 teachers.',
+    //   image: '../../../../assets/images/schools/campus7.jpg'
+    // },
+    // {
+    //   date: 'ESTABLISHED IN 2020',
+    //   color: '',
+    //   heading: 'AL-KHAIR CAMPUS 8',
+    //   text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam....',
+    //   image: '../../../../assets/images/schools/campus8.jpg'
+    // },
   ];
   openDialog(name) {
     if(name === 'Confirm Your Internship Function') {

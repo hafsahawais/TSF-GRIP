@@ -41,20 +41,20 @@ export class HomeComponent implements OnInit {
   ]
   public slides = [
     {
-      image: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80',
+      image: 'https://images.unsplash.com/photo-1598870783716-1c5f0f890aa4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       heading: 'Scheduled Calls',
       subheading: '',
       // tslint:disable-next-line:max-line-length
       text: 'Regular contact with core team members via live sessions.'
     },
     {
-      image: '../../../../assets/images/OrphanCareProgram.jpg',
+      image: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       heading: 'Mentor Support',
       subheading: '',
       text: 'Our mentors are there to guide and support you at any time. You can reach the mentors through email or whatsapp.'
     },
     {
-      image: '../../../../assets/images/waterwell.jpg',
+      image: 'https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80',
       heading: 'Discussion Forum',
       subheading: '',
       text: 'You will be asked to join The Sparks Foundation Network group on LinkedIn. Here ,your mentors and facilitators will answer your task queries.'
