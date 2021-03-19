@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5,
     .nav-item {
       &.active {
         > a {
-          color: #82a6b1!important;
+          color: $primary!important;
           font-weight: bold;
         }
       }
@@ -1300,7 +1300,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   padding: 7em 0 0 0;
-  background: #B0D85B;
+  background: #FAA99C;
   .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em;
